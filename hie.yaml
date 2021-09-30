@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "user-service:lib"
+
+    - path: "./app/Main.hs"
+      component: "user-service:exe:user-service-exe"
+
+    - path: "./app/Paths_user_service.hs"
+      component: "user-service:exe:user-service-exe"
+
+    - path: "./test"
+      component: "user-service:test:user-service-test"
