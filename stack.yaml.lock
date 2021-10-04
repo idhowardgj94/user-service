@@ -3,7 +3,21 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: AesonBson-0.4.0@sha256:fb368ec6f750d582c0630b2eb0d562d7eecab87da4a099593746298b27184a95,1333
+    pantry-tree:
+      size: 378
+      sha256: c77494ff9ecf48cf4675e4973f8cbcf946e5a4badb023c50ea5a7c788aced7b4
+  original:
+    hackage: AesonBson-0.4.0@sha256:fb368ec6f750d582c0630b2eb0d562d7eecab87da4a099593746298b27184a95,1333
+- completed:
+    hackage: persistent-mongoDB-2.13.0.0@sha256:66b9fcd3d3084068653e3898db867e5f49c4ff3a6040d595d549c52877220db5,2744
+    pantry-tree:
+      size: 593
+      sha256: 5ae7b1ac51a0b083934193a6d01eea132adfe038b007afc992af7499432dcca7
+  original:
+    hackage: persistent-mongoDB-2.13.0.0@sha256:66b9fcd3d3084068653e3898db867e5f49c4ff3a6040d595d549c52877220db5,2744
 snapshots:
 - completed:
     size: 586041

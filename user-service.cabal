@@ -25,6 +25,9 @@ source-repository head
 
 library
   exposed-modules:
+      Api
+      Data.User
+      Db
       Lib
   other-modules:
       Paths_user_service
@@ -37,10 +40,12 @@ library
     , base-compat-batteries
     , blaze-html
     , blaze-markup
+    , bson
     , bytestring
     , directory
     , http-client
     , http-media
+    , mongoDB
     , mtl
     , mysql-simple
     , resource-pool
@@ -51,6 +56,7 @@ library
     , text
     , time
     , wai
+    , wai-logger ==2.3.6
     , warp
   default-language: Haskell2010
 
@@ -68,10 +74,12 @@ executable user-service-exe
     , base-compat-batteries
     , blaze-html
     , blaze-markup
+    , bson
     , bytestring
     , directory
     , http-client
     , http-media
+    , mongoDB
     , mtl
     , mysql-simple
     , resource-pool
@@ -83,6 +91,7 @@ executable user-service-exe
     , time
     , user-service
     , wai
+    , wai-logger ==2.3.6
     , warp
   default-language: Haskell2010
 
@@ -101,10 +110,12 @@ test-suite user-service-test
     , base-compat-batteries
     , blaze-html
     , blaze-markup
+    , bson
     , bytestring
     , directory
     , http-client
     , http-media
+    , mongoDB
     , mtl
     , mysql-simple
     , resource-pool
@@ -116,5 +127,6 @@ test-suite user-service-test
     , time
     , user-service
     , wai
+    , wai-logger ==2.3.6
     , warp
   default-language: Haskell2010

@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  mongo:
+#    network_mode: host
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - db-data:/data/db
+  mongo-express:
+    image: mongo-express
+    ports:
+      - 8081:8081
+#      ME_CONFIG_MONGODB_SERVER: 0.0.0.0
+#    network_mode: host
+volumes:
+  db-data:
+

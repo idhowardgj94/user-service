@@ -41,7 +41,9 @@ packages:
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
 # extra-deps: []
-
+extra-deps:
+- AesonBson-0.4.0@sha256:fb368ec6f750d582c0630b2eb0d562d7eecab87da4a099593746298b27184a95,1333
+- persistent-mongoDB-2.13.0.0@sha256:66b9fcd3d3084068653e3898db867e5f49c4ff3a6040d595d549c52877220db5,2744
 # Override default flag values for local packages and extra-deps
 # flags: {}
 

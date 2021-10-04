@@ -21,7 +21,6 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-- base >= 4.7 && < 5
 - aeson
 - servant-server
 - wai
@@ -43,7 +42,9 @@ dependencies:
 - http-client
 - warp
 - servant-client
-
+- wai-logger == 2.3.6
+- mongoDB
+- bson
 library:
   source-dirs: src
 
