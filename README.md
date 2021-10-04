@@ -1,4 +1,7 @@
+
 # user-service
+
+**This is a playground repo, and in middle of devlopment, so didn't have completely functionality yet**
 
 This is a simple service, aim to offer a simple authencation functionality.
 
