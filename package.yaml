@@ -23,11 +23,13 @@ dependencies:
 - base >= 4.7 && < 5
 - aeson
 - servant-server
+- servant-auth-server
 - wai
 - warp
 - text
 - time
 - servant
+- servant-auth
 - blaze-html
 - http-media
 - string-conversions
@@ -38,13 +40,15 @@ dependencies:
 - directory 
 - attoparsec
 - resource-pool
-- mysql-simple
 - http-client
 - warp
 - servant-client
 - wai-logger == 2.3.6
 - mongoDB
 - bson
+- fast-logger
+- resource-pool
+- password
 library:
   source-dirs: src
 

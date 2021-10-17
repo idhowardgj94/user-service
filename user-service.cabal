@@ -25,10 +25,15 @@ source-repository head
 
 library
   exposed-modules:
-      Api
+      App
+      Data.Api
       Data.User
-      Db
+      Db.Connection
+      Db.UserRepository
       Lib
+      Server
+      Util
+      Validate
   other-modules:
       Paths_user_service
   hs-source-dirs:
@@ -43,13 +48,16 @@ library
     , bson
     , bytestring
     , directory
+    , fast-logger
     , http-client
     , http-media
     , mongoDB
     , mtl
-    , mysql-simple
+    , password
     , resource-pool
     , servant
+    , servant-auth
+    , servant-auth-server
     , servant-client
     , servant-server
     , string-conversions
@@ -77,13 +85,16 @@ executable user-service-exe
     , bson
     , bytestring
     , directory
+    , fast-logger
     , http-client
     , http-media
     , mongoDB
     , mtl
-    , mysql-simple
+    , password
     , resource-pool
     , servant
+    , servant-auth
+    , servant-auth-server
     , servant-client
     , servant-server
     , string-conversions
@@ -113,13 +124,16 @@ test-suite user-service-test
     , bson
     , bytestring
     , directory
+    , fast-logger
     , http-client
     , http-media
     , mongoDB
     , mtl
-    , mysql-simple
+    , password
     , resource-pool
     , servant
+    , servant-auth
+    , servant-auth-server
     , servant-client
     , servant-server
     , string-conversions
